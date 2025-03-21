@@ -18,25 +18,12 @@ Source Coop download command implementation
 
 from setuptools import find_packages, setup
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
-
 setup(
     name="source-coop",
     version="0.1.0",
-    author="Samapriya Roy",
-    author_email="samapriya.roy@gmail.com",
-    description="Unofficial Python SDK & CLI for Source Coop",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/samapriya/source-coop",
     packages=find_packages(),
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "Operating System :: OS Independent",
-    ],
-    license="Apache-2.0",
-    python_requires=">=3.7",
+    data_files=[("", ["LICENSE"])],  # Ensure LICENSE is included
+    url="https://github.com/samapriya/source-coop",
     install_requires=[
         "requests>=2.25.0",
         "boto3>=1.17.0",
@@ -47,6 +34,22 @@ setup(
         "aiohttp>=3.8.0",
         "aiofiles>=0.7.0",
     ],
+    license="Apache 2.0",
+    long_description=open("README.md", "r", encoding="utf-8").read(),
+    long_description_content_type="text/markdown",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: Apache Software License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.7",
+    author="Samapriya Roy",
+    author_email="samapriya.roy@gmail.com",
+    description="Unofficial Python SDK & CLI for Source Coop",
     entry_points={
         "console_scripts": [
             "source-coop=source_coop.cli:main",
