@@ -9,6 +9,9 @@ An unofficial Python SDK and command-line interface for [Source Coop](https://so
 
 > **DISCLAIMER**: This project is not officially affiliated with, authorized by, endorsed by, or in any way connected to Source Coop or Radiant Earth. This is an independent project created by Samapriya Roy to simplify interaction with Source Coop's public APIs and services.
 
+
+# For complete documentation head to [source.geocarpnetry.org](https://source.geocarpentry.org/)
+
 ## Features
 
 This package serves both as a software development kit (SDK) for Python applications and as a command-line interface (CLI):
