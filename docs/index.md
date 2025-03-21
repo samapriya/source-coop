@@ -9,9 +9,9 @@
 
 An unofficial Python SDK and command-line interface for [Source Coop](https://source.coop), a platform for discovering, accessing, and sharing geospatial data.
 
-!!! tip "Insiders Program and Insiders only datasets"
+!!! tip "Project DISCLAIMER"
 
-    **DISCLAIMER: This project is not officially affiliated with, authorized by, endorsed by, or in any way connected to Source Coop or Radiant Earth. This is an independent project created by Samapriya Roy to simplify interaction with Source Coop's public APIs and services**
+    **This project is not officially affiliated with, authorized by, endorsed by, or in any way connected to Source Coop or Radiant Earth. This is an independent project created by Samapriya Roy to simplify interaction with Source Coop's public APIs and services**
 
 ## What is Source Coop?
 
