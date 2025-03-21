@@ -1,4 +1,5 @@
 # Unofficial Source Coop Python SDK & CLI
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/samapriya/source-coop/blob/main/notebooks/source-coop-snippets.ipynb)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
 <center>
