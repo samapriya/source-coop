@@ -1,0 +1,153 @@
+site_name: Source Coop Python SDK & CLI
+site_description: Unofficial Python SDK and CLI for Source Coop
+
+site_author: Samapriya Roy
+site_url: https://github.com/samapriya/source-coop
+
+# Repository
+repo_name: source-coop
+repo_url: https://github.com/samapriya/source-coop
+
+# Copyright
+copyright: "Copyright &copy; 2025 Samapriya Roy"
+
+# Configuration
+theme:
+  name: "material"
+  custom_dir: overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Google Sans
+    code: Regular
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+# Options
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/samapriya
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/samapriya
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@samapriyaroy
+    - icon: fontawesome/brands/mastodon
+      link: https://mapstodon.space/@samapriya
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/samapriyaroy
+
+  # analytics:
+  #   provider: google
+  #   property: G-P5Q8CHNTVP
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - minify:
+      minify_html: true
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+# Page tree
+nav:
+  - Home:
+      - index.md
+  - Installation: installation.md
+  - Setup Tools:
+      - Authentication: projects/login.md
+      - Check Current User: projects/whoami.md
+  - User & Organization Tools:
+      - User/Org Profiles: projects/profile.md
+      - Organization Members: projects/members.md
+  - Repository Tools:
+      - List Repositories: projects/repos.md
+      - Repository Summary: projects/summarize.md
+      - Download Repository: projects/download.md
+  - Reference:
+      - CLI Reference: cli-reference.md
+  - Changelog: changelog.md
+  - License: license.md
