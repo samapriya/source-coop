@@ -1,5 +1,6 @@
 # Unofficial Source Coop Python SDK and CLI
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/samapriya/source-coop/blob/main/notebooks/source-coop-snippets.ipynb)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 | <img src="https://github.com/user-attachments/assets/d0441aa4-f491-464b-ae1f-b994dc8a0b65" alt="Logo" width="50"> | **Python SDK and CLI** <br> ![License](https://img.shields.io/badge/License-Apache%202.0-blue) |
