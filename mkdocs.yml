@@ -138,8 +138,7 @@ markdown_extensions:
   - pymdownx.tilde
 # Page tree
 nav:
-  - Home:
-      - index.md
+  - Home: index.md
   - Installation: installation.md
   - Setup Tools:
       - Authentication: projects/login.md
