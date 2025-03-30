@@ -7,6 +7,7 @@ site_url: https://github.com/samapriya/source-coop
 # Repository
 repo_name: source-coop
 repo_url: https://github.com/samapriya/source-coop
+edit_uri: blob/main/docs/
 
 # Copyright
 copyright: "Copyright &copy; 2025 Samapriya Roy"
